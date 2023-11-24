@@ -1,0 +1,22 @@
+h1{
+    font-size: 50px;
+    text-align: center;
+}
+body{
+    background-color: rgb(199, 199, 199);
+}
+.field{
+    display: flex;
+    width: 500px;
+    height: 500px;
+    background-color: white;
+    margin: 0 auto 0 auto;
+    flex-wrap: wrap;
+}
+.field div{
+    background-color: white;
+}
+
+.field div:hover{
+    background-color: black;
+}
