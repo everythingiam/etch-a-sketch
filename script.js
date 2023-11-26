@@ -1,6 +1,18 @@
 const field = document.querySelector('.field');
 
 var pressed = false;
+
+field.addEventListener('mousedown', (event) => {
+    event.preventDefault(); 
+    pressed = true;
+});
+field.addEventListener('mouseup', () => {
+    pressed = false;
+})
+field.addEventListener('click', (e) => {
+    e.target.style.backgroundColor = 'black';
+})
+
 function fillField(size){
 
     let square = size*size;
@@ -11,22 +23,13 @@ function fillField(size){
         pixel.setAttribute('style', `width: ${pixelSize}px; height: ${pixelSize}px`);
 
         field.append(pixel);
-        field.addEventListener('mouseup', () => {
-            return;
-        })
-        field.addEventListener('mousedown', () => {
-            pixel.addEventListener('mouseover', () => {
-                pixel.style.backgroundColor = 'black';
-            })
-        })
-        // pixel.addEventListener('mousedown', () => pressed = true);
-        // pixel.addEventListener('mouseup', () => pressed = false);
-        // while (pressed){
-        //     pixel.style.backgroundColor = 'black';
-        // }
     }
     
-
 }
-fillField(64);
+fillField(32);
 
+
+
+field.addEventListener('mousemove', (e) => {
+    if (pressed) e.target.style.backgroundColor = 'black';
+})
