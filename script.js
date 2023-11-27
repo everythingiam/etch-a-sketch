@@ -1,5 +1,7 @@
 const field = document.querySelector('.field');
 const body = document.querySelector('body');
+
+const FIELD_VALUE = 20;
 var pressed = false;
 
 field.addEventListener('mousedown', (event) => {
@@ -35,17 +37,18 @@ function removeField(){
 const range = document.querySelector(".range");
 const setting = document.querySelector(".setting");
 
+
 range.addEventListener("input", () => {
-    setSetting();
+    let val = range.value; 
+    setSetting(val);
 });
 range.addEventListener("mouseup", () =>{
+    let val = range.value; 
     removeField();
-    fillField(setSetting());
+    fillField(setSetting(val));
 })
 
-function setSetting() {
-    const val = range.value; 
-
+function setSetting(val) {
     const min = range.min; 
     const max = range.max; 
 
@@ -66,4 +69,4 @@ function setSetting() {
     return val;
 }
 
-fillField(setSetting());
+fillField(setSetting(FIELD_VALUE));
