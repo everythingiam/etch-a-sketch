@@ -14,10 +14,9 @@ field.addEventListener('click', (e) => {
 })
 
 function fillField(size){
-
     let square = size*size;
-
-    let pixelSize = 500/size;
+    let width = field.offsetWidth;
+    let pixelSize = width/size;
     for (let i = 0; i < square; i++){
         const pixel = document.createElement('div');
         pixel.setAttribute('style', `width: ${pixelSize}px; height: ${pixelSize}px`);

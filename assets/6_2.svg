@@ -1,0 +1,45 @@
+<svg width="47" height="47" viewBox="0 0 47 47" fill="none" xmlns="http://www.w3.org/2000/svg">
+<rect x="1" y="41" width="5" height="5" stroke="white" stroke-width="0.5"/>
+<rect x="6" y="41" width="5" height="5" stroke="white" stroke-width="0.5"/>
+<rect x="11" y="41" width="5" height="5" stroke="white" stroke-width="0.5"/>
+<rect x="16" y="41" width="5" height="5" stroke="white" stroke-width="0.5"/>
+<rect x="21" y="41" width="5" height="5" stroke="white" stroke-width="0.5"/>
+<rect x="26" y="41" width="5" height="5" stroke="white" stroke-width="0.5"/>
+<rect x="31" y="41" width="5" height="5" stroke="white" stroke-width="0.5"/>
+<rect x="36" y="41" width="5" height="5" stroke="white" stroke-width="0.5"/>
+<rect x="41" y="41" width="5" height="5" stroke="white" stroke-width="0.5"/>
+<rect x="46" y="1" width="5" height="5" transform="rotate(90 46 1)" stroke="white" stroke-width="0.5"/>
+<rect x="46" y="6" width="5" height="5" transform="rotate(90 46 6)" stroke="white" stroke-width="0.5"/>
+<rect x="46" y="11" width="5" height="5" transform="rotate(90 46 11)" stroke="white" stroke-width="0.5"/>
+<rect x="46" y="16" width="5" height="5" transform="rotate(90 46 16)" stroke="white" stroke-width="0.5"/>
+<rect x="46" y="21" width="5" height="5" transform="rotate(90 46 21)" stroke="white" stroke-width="0.5"/>
+<rect x="46" y="26" width="5" height="5" transform="rotate(90 46 26)" stroke="white" stroke-width="0.5"/>
+<rect x="46" y="31" width="5" height="5" transform="rotate(90 46 31)" stroke="white" stroke-width="0.5"/>
+<rect x="46" y="36" width="5" height="5" transform="rotate(90 46 36)" stroke="white" stroke-width="0.5"/>
+<rect x="46" y="41" width="5" height="5" transform="rotate(90 46 41)" stroke="white" stroke-width="0.5"/>
+<rect x="46" y="6" width="5" height="5" transform="rotate(-180 46 6)" stroke="white" stroke-width="0.5"/>
+<rect x="41" y="6" width="5" height="5" transform="rotate(-180 41 6)" stroke="white" stroke-width="0.5"/>
+<rect width="5" height="5" transform="matrix(1 0 0 -1 11 20)" stroke="white" stroke-width="0.5"/>
+<rect width="5" height="5" transform="matrix(1 0 0 -1 31 20)" stroke="white" stroke-width="0.5"/>
+<rect width="5" height="5" transform="matrix(1 0 0 -1 11 36)" stroke="white" stroke-width="0.5"/>
+<rect width="5" height="5" transform="matrix(1 0 0 -1 16 31)" stroke="white" stroke-width="0.5"/>
+<rect width="5" height="5" transform="matrix(1 0 0 -1 21 31)" stroke="white" stroke-width="0.5"/>
+<rect width="5" height="5" transform="matrix(1 0 0 -1 26 31)" stroke="white" stroke-width="0.5"/>
+<rect width="5" height="5" transform="matrix(1 0 0 -1 31 36)" stroke="white" stroke-width="0.5"/>
+<rect x="36" y="6" width="5" height="5" transform="rotate(-180 36 6)" stroke="white" stroke-width="0.5"/>
+<rect x="31" y="6" width="5" height="5" transform="rotate(-180 31 6)" stroke="white" stroke-width="0.5"/>
+<rect x="26" y="6" width="5" height="5" transform="rotate(-180 26 6)" stroke="white" stroke-width="0.5"/>
+<rect x="21" y="6" width="5" height="5" transform="rotate(-180 21 6)" stroke="white" stroke-width="0.5"/>
+<rect x="16" y="6" width="5" height="5" transform="rotate(-180 16 6)" stroke="white" stroke-width="0.5"/>
+<rect x="11" y="6" width="5" height="5" transform="rotate(-180 11 6)" stroke="white" stroke-width="0.5"/>
+<rect x="6" y="6" width="5" height="5" transform="rotate(-180 6 6)" stroke="white" stroke-width="0.5"/>
+<rect x="1" y="46" width="5" height="5" transform="rotate(-90 1 46)" stroke="white" stroke-width="0.5"/>
+<rect x="1" y="41" width="5" height="5" transform="rotate(-90 1 41)" stroke="white" stroke-width="0.5"/>
+<rect x="1" y="36" width="5" height="5" transform="rotate(-90 1 36)" stroke="white" stroke-width="0.5"/>
+<rect x="1" y="31" width="5" height="5" transform="rotate(-90 1 31)" stroke="white" stroke-width="0.5"/>
+<rect x="1" y="26" width="5" height="5" transform="rotate(-90 1 26)" stroke="white" stroke-width="0.5"/>
+<rect x="1" y="21" width="5" height="5" transform="rotate(-90 1 21)" stroke="white" stroke-width="0.5"/>
+<rect x="1" y="16" width="5" height="5" transform="rotate(-90 1 16)" stroke="white" stroke-width="0.5"/>
+<rect x="1" y="11" width="5" height="5" transform="rotate(-90 1 11)" stroke="white" stroke-width="0.5"/>
+<rect x="1" y="6" width="5" height="5" transform="rotate(-90 1 6)" stroke="white" stroke-width="0.5"/>
+</svg>

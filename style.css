@@ -1,14 +1,60 @@
 h1{
     font-size: 50px;
     text-align: center;
+    margin: 0;
+    padding: 0;
+    color: #FFF;
+    font-family: 'Press Start';
+    font-size: 27px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    text-transform: uppercase;
 }
-body{
-    background-color: rgb(199, 199, 199);
+p{
+    margin: 0;
+    padding: 0;
+    color: #FFF;
+    font-family: 'DePixel Klein';
+    font-size: 11px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    text-transform: uppercase;
 }
+@font-face{
+    font-family: 'Press Start';
+    src: url(fonts/PressStart2P-Regular.ttf);
+}
+@font-face{
+    font-family: 'DePixel Klein';
+    src: url(fonts/DePixelKlein.ttf);
+}
+@font-face{
+    font-family: 'DePixel Schmal';
+    src: url(fonts/DePixelSchmal.ttf);
+}
+html, body{
+    background-color: black;
+   margin: 0;
+   padding: 0;
+   overflow: hidden;
+}
+*{
+    box-sizing: border-box;
+}
+section{
+    display: grid;
+    grid-template-columns: 15% 70% 15%;
+    grid-template-rows: 100vh;
+    width: 100%;
+    height: 100vh;
+}
+
 .field{
     display: flex;
-    width: 500px;
-    height: 500px;
+    width: 400px;
+    height: 400px;
     background-color: white;
     margin: 0 auto 0 auto;
     flex-wrap: wrap;
@@ -16,7 +62,79 @@ body{
 .field div{
     background-color: white;
 }
-
+.main-container{
+    display: grid;
+    grid-row: 1fr 4fr 1fr;
+    width: 100%;
+    max-width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+}
+.field-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
 .field div:hover{
     background-color: black;
+}
+.tape{
+    display: block;
+    width: 100%;
+    padding-left: 40px;
+}
+.tape2{
+    padding-right: 40px;
+    padding-left: 0;
+
+}
+.img-wrap{
+    display: block;
+    animation: tape 15s linear infinite;
+}
+.img-wrap2{
+    display: block;
+    animation: tape2 16s linear infinite;
+}
+.tape img {
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+@keyframes tape{
+    to{
+        transform: translateY(0);
+    }
+    from{
+        transform: translateY(-100%);
+    }
+}
+@keyframes tape2{
+    to{
+        transform: translateY(-100%);
+    }
+    from{
+        transform: translateY(0);
+    }
+}
+
+.controls, .info{
+    color: white;
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+}
+article{
+    margin-bottom: 20px;
+}
+.name{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+.name p{
+    max-width: 20%;
+}
+.p-right{
+    text-align: right;
 }
