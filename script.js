@@ -1,9 +1,13 @@
 const field = document.querySelector('.field');
 const body = document.querySelector('body');
 const crearBtn = document.querySelector('.clear');
-const eraser = document.querySelector('.eraser');
+const eraserBtn = document.querySelector('.eraser');
+const colorBtn = document.querySelector('.color');
+const rainbowBtn = document.querySelector('.rainbow');
 
 const FIELD_VALUE = 20;
+setMode('color');
+
 var pressed = false;
 field.addEventListener('mousedown', (event) => {
     event.preventDefault(); 
@@ -12,21 +16,52 @@ field.addEventListener('mousedown', (event) => {
 body.addEventListener('mouseup', () => {
     pressed = false;
 })
-field.addEventListener('click', (e) => {
-    e.target.style.backgroundColor = 'black';
-})
-field.addEventListener('mousemove', (e) => {
-    if (pressed) e.target.style.backgroundColor = 'black';
-})
 
 crearBtn.addEventListener('click', () => {
     removeField();
     fillField(setSetting(range.value));
 })
 
+colorBtn.onclick = () => setMode('color');
+eraserBtn.onclick = () => setMode('eraser');
+rainbowBtn.onclick = () => setMode('rainbow');
 
+function setMode(mode){
+    field.addEventListener('mousedown', (e) => {
+        if (mode == 'color'){
+            e.target.style.backgroundColor = 'black';
+        } else if (mode == 'rainbow'){
+            let randomColor = getRandomColor();
+            e.target.style.backgroundColor = randomColor;
+        } else if (mode == 'eraser'){
+            e.target.style.backgroundColor = 'white';
+        }
+    });
+    field.addEventListener('mouseover', (e) => {
+        if (pressed) {
+            if (mode == 'color'){
+                e.target.style.backgroundColor = 'black';
+            } else if (mode == 'rainbow'){
+                let randomColor = getRandomColor();
+                e.target.style.backgroundColor = randomColor;
+            } else if (mode == 'eraser'){
+                e.target.style.backgroundColor = 'white';
+            }
+        }
+    })
+}
+function getRandomColor() {
+    var letters = '0123456789ABCDEF';
+    var color = '#';
+    for (var i = 0; i < 6; i++) {
+      color += letters[Math.floor(Math.random() * 16)];
+    }
+    return color;
+  }
 
-
+// function setMode(mode){
+//  mode;
+// }
 function fillField(size){
     let width = field.offsetWidth;
     let pixelSize = width/size;
@@ -56,6 +91,7 @@ range.addEventListener("mouseup", () =>{
     let val = range.value; 
     removeField();
     fillField(setSetting(val));
+    setMode('color');
 })
 
 function setSetting(val) {
