@@ -153,7 +153,15 @@ section{
     justify-content: space-between;
 }
 article{
-    
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
+.left, .right{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
 }
 .name{
     display: flex;
