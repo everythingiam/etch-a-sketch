@@ -234,7 +234,14 @@ input{
   line-height: 25px;
   letter-spacing: -1.7px;
 }
-
+.arrow-left, .arrow-right{
+  position: absolute;
+  width: 12px;
+  pointer-events: none; 
+  user-select: none; 
+  top: 160%;
+  transform: translateY(-50%);
+}
 hr {
     border: none;
     height: 2px !important;

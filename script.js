@@ -80,6 +80,9 @@ function removeField(){
 
 const range = document.querySelector(".range");
 const setting = document.querySelector(".setting");
+const arrowLeft = document.querySelector(".arrow-left");
+const arrowRight = document.querySelector(".arrow-right");
+
 range.value = FIELD_VALUE;
 
 range.addEventListener("input", () => {
@@ -110,7 +113,8 @@ function setSetting(val) {
                                                             //края, в зависимости от ширины поля и текущего значения.)
 
     setting.style.left = `${offsetLeft}px`; //смсещение
-
+    arrowLeft.style.left = `${offsetLeft + 7}px`;
+    arrowRight.style.left = `${offsetLeft + 83}px`;
     return val;
 }
 
