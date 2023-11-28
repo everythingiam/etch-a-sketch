@@ -1,9 +1,10 @@
 const field = document.querySelector('.field');
 const body = document.querySelector('body');
+const crearBtn = document.querySelector('.clear');
+const eraser = document.querySelector('.eraser');
 
 const FIELD_VALUE = 20;
 var pressed = false;
-
 field.addEventListener('mousedown', (event) => {
     event.preventDefault(); 
     pressed = true;
@@ -17,6 +18,14 @@ field.addEventListener('click', (e) => {
 field.addEventListener('mousemove', (e) => {
     if (pressed) e.target.style.backgroundColor = 'black';
 })
+
+crearBtn.addEventListener('click', () => {
+    removeField();
+    fillField(setSetting(range.value));
+})
+
+
+
 
 function fillField(size){
     let width = field.offsetWidth;
@@ -36,6 +45,7 @@ function removeField(){
 
 const range = document.querySelector(".range");
 const setting = document.querySelector(".setting");
+range.value = FIELD_VALUE;
 
 
 range.addEventListener("input", () => {
