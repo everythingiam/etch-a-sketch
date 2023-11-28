@@ -115,15 +115,3 @@ function setSetting(val) {
 }
 
 fillField(setSetting(FIELD_VALUE));
-
-// const rainbowWord = document.querySelector('span');
-// function makeRainbow(word){
-//     // word.remove();
-//     let chars = word.split('');
-//     for (let i in chars){
-//         chars[i].color = getRandomColor();
-//     }
-//     word = chars;
-// }
-// makeRainbow(rainbowWord);
-// rainbowBtn.appendChild()
